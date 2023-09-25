@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hololive</title>
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="images/hololive.png" height="40" class="logo" />
+      <h1>Что такое Hololive?</h1>
+      <p class="mainDesc">
+        Hololive - это виртуальное агентство, специализирующееся на создании
+        виртуальных ютуберов (Vtubers) и предоставлении им платформы для стримов
+        и развлекательного контента. Это популярное явление, особенно в Японии,
+        которое объединяет миллионы поклонников виртуальных айдолов со всего
+        мира.<br /><br />
+        Основанное компанией Cover Corporation, Hololive представляет собой
+        уникальное объединение виртуальной реальности и анимации, создавая
+        персонажей-ютуберов с помощью 2D и 3D анимации. Каждый Vtuber в Hololive
+        имеет свой собственный уникальный внешний вид, характер и голос, что
+        делает их узнаваемыми и интересными для зрителей.<br /><br />
+        Главным образом, Hololive специализируется на контенте в жанре стриминга
+        видеоигр, музыки, развлекательных шоу, ролевых игр и взаимодействии с
+        аудиторией в чате. Ютуберы Hololive также создают музыку, выпускают
+        собственные песни и проводят виртуальные концерты.<br /><br />
+        Что делает Hololive особенно интересным, так это то, что аудитория может
+        взаимодействовать с персонажами в режиме реального времени, задавать им
+        вопросы, отправлять донаты и влиять на исход трансляций. Этот уровень
+        вовлеченности и интерактивности делает Hololive популярным явлением
+        среди фанатов аниме, видеоигр и виртуальной культуры.<br /><br />
+        Каждый Vtuber Hololive имеет свою фан-базу и следит за своими
+        социальными медиа-аккаунтами, чтобы поддерживать связь со своими
+        поклонниками. Hololive также регулярно проводит мероприятия, концерты и
+        специальные стримы, чтобы развивать свою общность и привлекать новых
+        зрителей.<br /><br />
+        В целом, Hololive - это захватывающий мир виртуальных ютуберов, который
+        предлагает уникальный опыт для зрителей и ставит в центр внимания
+        творческие возможности виртуальной реальности и анимации.<br /><br />
+      </p>
+      <h1>Участники Hololive Indonesia</h1>
+      <div class="sort">
+        <div
+          class="item"
+          onclick="renderSelected(this)"
+          data-selected="true"
+          data-value="all"
+        >
+          Все
+        </div>
+        <div
+          class="item"
+          onclick="renderSelected(this)"
+          data-selected="false"
+          data-value="1"
+        >
+          1 поколение
+        </div>
+        <div
+          class="item"
+          onclick="renderSelected(this)"
+          data-selected="false"
+          data-value="2"
+        >
+          2 поколение
+        </div>
+        <div
+          class="item"
+          onclick="renderSelected(this)"
+          data-selected="false"
+          data-value="3"
+        >
+          3 поколение
+        </div>
+      </div>
+
+      <div class="cards" id="cards">
+        <div class="item">
+          <img src="images/Risu.png" alt="Аюнда Рису" />
+          <div class="group">
+            <div class="subgroup">
+              <h2>Аюнда Рису</h2>
+              <span>1 поколение</span>
+            </div>
+            <p>
+              Аюнда Рису - очаровательная белка из Hololive ID, которая всегда
+              готова весело провести время с фанатами. Она известна своей
+              бесконечной энергией и радостью, которую она приносит во время
+              стримов.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/Risu.png" alt="Аюнда Рису" />
+          <div class="group">
+            <div class="subgroup">
+              <h2>Аюнда Рису</h2>
+              <span>1 поколение</span>
+            </div>
+            <p>
+              Аюнда Рису - очаровательная белка из Hololive ID, которая всегда
+              готова весело провести время с фанатами. Она известна своей
+              бесконечной энергией и радостью, которую она приносит во время
+              стримов.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/Risu.png" alt="Аюнда Рису" />
+          <div class="group">
+            <div class="subgroup">
+              <h2>Аюнда Рису</h2>
+              <span>1 поколение</span>
+            </div>
+            <p>
+              Аюнда Рису - очаровательная белка из Hololive ID, которая всегда
+              готова весело провести время с фанатами. Она известна своей
+              бесконечной энергией и радостью, которую она приносит во время
+              стримов.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popupWrapper" id="popup">
+      <div class="popup" id="popupContent"></div>
+    </div>
+  </body>
+</html>
